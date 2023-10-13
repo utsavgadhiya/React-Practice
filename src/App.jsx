@@ -36,6 +36,7 @@ import ComponentA from "./components/ComponentA";
 import { UserProvider } from "./components/userContext";
 import GetList from "./components/GetList";
 import PostForm from "./components/PostForm";
+import HookCounter from "./components/HookCounter";
 
 function App() {
   return (
@@ -78,7 +79,6 @@ function App() {
       </ErrorBoundaryComp>
 
       {/* Below is Higher Order Component Concept */}
-
       <ClickCounter name="Utsav"></ClickCounter>
       <HoverCounter></HoverCounter>
 
@@ -107,6 +107,7 @@ function App() {
 
       <GetList></GetList>
       <PostForm></PostForm>
+      <HookCounter></HookCounter>
     </div>
   );
 }
