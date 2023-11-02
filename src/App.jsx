@@ -54,6 +54,12 @@ import Comp2 from "./components/Comp2";
 import Comp3 from "./components/Comp3";
 import Fetch1 from "./components/Fetch1";
 import Fetch2 from "./components/Fetch2";
+import Parent from './components/Parent'
+import CounterFour from "./components/CounterFour";
+import Input from './components/Input'
+import HookTimer from "./components/HookTimer";
+import DocTitle from "./components/DocTitle";
+import CounterComp from "./components/CounterComp";
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -184,6 +190,20 @@ function App() {
 
       {/* Feching data with useReducer and useEffect hooks */}
       <Fetch2></Fetch2>
+
+      {/* useCallback and React.memo() */}
+      <Parent></Parent>
+
+      {/* useMemo() */}
+      <CounterFour></CounterFour>
+
+      {/* useRef */}
+      <Input></Input>
+      <HookTimer></HookTimer>
+
+      {/* Custom Hook */}
+      <DocTitle></DocTitle>
+      <CounterComp></CounterComp>
 
     </div>
   );
