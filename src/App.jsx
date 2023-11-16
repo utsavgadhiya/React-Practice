@@ -60,6 +60,7 @@ import Input from './components/Input'
 import HookTimer from "./components/HookTimer";
 import DocTitle from "./components/DocTitle";
 import CounterComp from "./components/CounterComp";
+import LazyLoading from "./components/LazyLoading";
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -204,6 +205,9 @@ function App() {
       {/* Custom Hook */}
       <DocTitle></DocTitle>
       <CounterComp></CounterComp>
+
+      {/* Lazy loading with React Suspense */}
+      <LazyLoading user='admin'></LazyLoading>
 
     </div>
   );

@@ -37,3 +37,6 @@ Notes:
 - Memo Components: Memo components are used for functional components to prevent unnecessary re-renders. They perform a shallow comparison of props, and if the props remain the same, the component won't re-render. This is helpful in optimizing the performance of functional components.
 - The difference between useCallback() and React.memo() and useMemo() is that the former one is used for memoizing functions, second one is used for memoizing components and the latter one is used for memoizing values.
 - useState and useReducer are both used for state management.
+- While working with state, if the state variable is object or array then make a copy of the existing state, modify as necessary and then pass the new state to the setter function or while returning from a reducer function as it will cause a re-render.
+- props.children is always a new reference which will cause child comp to always re-renders. Therefore, if the child comp itself has children elements, there's no need wrap child comp with react memo.
+\
